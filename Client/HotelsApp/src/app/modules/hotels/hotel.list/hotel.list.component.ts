@@ -3,6 +3,7 @@ import { HotelService } from 'src/app/services/hotelService';
 import { IHotel } from 'src/app/data/hotel';
 import { IHotelSearchCriteria } from 'src/app/data/hotelCriteria';
 import { SortService } from 'src/app/common/sorting/sortService';
+import { sortOrder } from 'src/app/common/sorting/sorter';
 
 @Component({
     selector: 'hotel-list',
@@ -63,8 +64,6 @@ export class HotelListComponent implements OnInit {
             name: this.hotelListByNameFilter  
         }
 
-        // this.doLocalFilter(criteria); // Try client side filtering //
-
         // User Server side filtering //
         this.hotelService.getHotelsByCriteria(criteria).subscribe({
           next : data => this.setFilteredHotelsData(data),
@@ -72,7 +71,7 @@ export class HotelListComponent implements OnInit {
         });
     }
 
-    sortByColumn(column: string){
+    sortByColumn(column: string) {
       if (!column || column.length === 0) {
         return;
       }
@@ -80,20 +79,7 @@ export class HotelListComponent implements OnInit {
       this.sortService.sortData(column);
     }
 
-    private doLocalFilter(criteria: IHotelSearchCriteria) {
-      if (criteria) {
-        let hotelData: Array<IHotel> = this.hotelList;
-        if (criteria.name) {
-            hotelData = hotelData.filter(r => criteria.name && r.name.toLowerCase().indexOf(criteria.name.toLowerCase()) >= 0);
-        }
-
-        if (criteria.rating) {
-            hotelData.filter(r => criteria.rating && r.rating === criteria.rating)
-        }
-        this.setFilteredHotelsData(hotelData);
-      }
-      else {
-        this.setFilteredHotelsData(this.hotelList);
-      }
+    isSortedByColumn(col: string, order: string): boolean {
+      return this.sortService && this.sortService.isSortingByColumn(col, order);
     }
 }

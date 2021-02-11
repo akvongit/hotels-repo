@@ -8,6 +8,22 @@ export class SortService {
     private _sortOrder = 1;  // Signifies Ascending
     private _collator = Intl.Collator(undefined, { numeric: true, sensitivity: 'base' })
 
+    public get currentSortField(): string {
+        return this._sortModel ? this._sortModel.property : '';
+    }
+
+    public get currentSortOrder(): sortOrder {
+        return this._sortModel ? this._sortModel.order : sortOrder.ascending;
+    }
+
+    public isSortingByColumn(col: string, order: string): boolean{
+        const sortDirection = order && order.toLocaleLowerCase() == "desc" ? sortOrder.descending : sortOrder.ascending;
+
+        return  this._sortModel  
+                && this._sortModel.property == col 
+                && this._sortModel.order === sortDirection; 
+    }
+
     public get dataList(): Array<any> {
         return this._dataList;
     }
