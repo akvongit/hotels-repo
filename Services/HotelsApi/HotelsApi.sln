@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelsApi", "HotelsApi.csproj", "{85C68A62-FFAD-4A5F-A705-56A92C09DED8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelsApiTests", "..\HotelsApiTests\HotelsApiTests.csproj", "{7CBDFADD-9D6D-4D8A-9E03-100FE011041F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85C68A62-FFAD-4A5F-A705-56A92C09DED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85C68A62-FFAD-4A5F-A705-56A92C09DED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85C68A62-FFAD-4A5F-A705-56A92C09DED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85C68A62-FFAD-4A5F-A705-56A92C09DED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CBDFADD-9D6D-4D8A-9E03-100FE011041F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CBDFADD-9D6D-4D8A-9E03-100FE011041F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CBDFADD-9D6D-4D8A-9E03-100FE011041F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CBDFADD-9D6D-4D8A-9E03-100FE011041F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64BC2C48-DC7A-4636-955D-721625EF137A}
+	EndGlobalSection
+EndGlobal

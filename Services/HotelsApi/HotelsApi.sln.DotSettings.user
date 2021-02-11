@@ -1,0 +1,13 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=062edb0d_002D3d5b_002D479a_002D9e62_002D917b3aacc692/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestGetAllHotels" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7CBDFADD-9D6D-4D8A-9E03-100FE011041F::.NETCoreApp,Version=v3.1::HotelsApiTests.Controllers.HotelsControllerTests.TestGetAllHotels&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7CBDFADD-9D6D-4D8A-9E03-100FE011041F::.NETCoreApp,Version=v3.1::HotelsApiTests.Controllers.HotelsControllerTests.TestGetFilterMatchingHotels&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7CBDFADD-9D6D-4D8A-9E03-100FE011041F::.NETCoreApp,Version=v3.1::HotelsApiTests.Controllers.HotelsControllerTests.TestGetFilterMatchingNamedHotels&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=66768f5b_002D0472_002D4da2_002Db298_002Db98a1c41ce4b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestGetFilterMatchingNamedHotels" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7CBDFADD-9D6D-4D8A-9E03-100FE011041F::.NETCoreApp,Version=v3.1::HotelsApiTests.Controllers.HotelsControllerTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
