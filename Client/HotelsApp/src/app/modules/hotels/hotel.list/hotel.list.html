@@ -1,0 +1,41 @@
+<div class='card col-xs-12'>
+    <div class='card-header'>
+      {{pageTitle}}
+    </div>
+    <div class='card-body'>
+      <div class='row'>
+        <div class='col-md-6'>
+          <h4>Filtered by:</h4>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-md-2'>Name Filter</div>
+        <div class='col-md-3'><input type='text' [(ngModel)]='hotelListByNameFilter' /></div>
+        <div class='col-md-2'>Rating Filter</div>
+        <div class='col-md-2'><input type='text' [(ngModel)]='ratingFilter' /></div>
+      </div>
+      
+      <div>
+        <table class='table table-striped col-xs-12' *ngIf='hotelList && hotelList.length'>
+          <thead>
+            <tr>
+              <th (click)="sortByColumn('name');">Name</th>
+              <th (click)="sortByColumn('price');">Price</th>
+              <th (click)="sortByColumn('description');">Description</th>
+              <th (click)="sortByColumn('rating');">5 Star Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor='let hotel of filteredHotelList'>
+              <td>{{ hotel.name }}</td>
+              <td>{{ hotel.price | currency:'USD':'symbol':'1.2-2' }}</td>
+              <td>{{ hotel.description }}</td>
+              <td>
+                <rating-star [rating]='hotel.rating'></rating-star>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

@@ -30,6 +30,8 @@ Open powershell terminal. (This can be from the VS Code Powershell Terminal)
 
 Switch to directory Hotels-Repo/Client/HotelsApp
 
+Execute install.ps1 to ensure node_modules are installed. (This is required only one time).
+
 Execute run.ps1 from powershell command line.
 
 ----------------- Hotel Service Application ----------------- 
