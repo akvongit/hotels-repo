@@ -8,12 +8,13 @@ Run applications in following order:-
 
 ----------------- Step 1: Hotel Service API ----------------- 
 
-Run the project:
+To start the api:
 
 Open powershell terminal. (This can be from the VS Code Powershell Terminal)
 
 Switch to directory Hotels-Repo/Services/HotelsApi
-run.ps1
+
+Execute run.ps1 from powershell command line.
 
 ----------------- Hotel Service API ----------------- 
 
@@ -23,12 +24,13 @@ run.ps1
 
 ----------------- Step 2: Hotel Service Application ----------------- 
 
-Run the project:
+To start the client:
 
 Open powershell terminal. (This can be from the VS Code Powershell Terminal)
 
 Switch to directory Hotels-Repo/Client/HotelsApp
-run.ps1
+
+Execute run.ps1 from powershell command line.
 
 ----------------- Hotel Service Application ----------------- 
 
