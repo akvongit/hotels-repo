@@ -18,7 +18,7 @@ export class HotelListComponent implements OnInit {
     pageTitle: string = 'Hotels List';
     errorMessage: string = '';
 
-    constructor(private hotelService: HotelService, private sortService: SortService) {}
+    constructor(public hotelService: HotelService, private sortService: SortService) {}
     
     ngOnInit(): void {
         this.hotelService.getHotels().subscribe({
